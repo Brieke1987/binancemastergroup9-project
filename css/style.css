@@ -1,6 +1,10 @@
 body{
     margin: 0%;
 }
+.child a{
+    text-decoration: none;
+    color: white;
+}
 .header{
     background-color: #5a9170;
     color: white;
@@ -87,6 +91,7 @@ img{
 }
 .specialty-desc{
     text-align: center;
+    font-size: 25px;
 }
 .specialty-diagram{
     height: 600px;
@@ -107,4 +112,62 @@ figcaption{
 }
 .figgy{
     font-size: 20px;
+}
+/* about us */
+.about-us{
+    margin: ;
+    height: 600px;
+    width: 1400px;
+    border-radius: 30px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 6;
+}
+.about-us-image{
+    flex: 1;
+    
+}
+.about-us-image img{
+    height: 500px;
+    width:500px;
+}
+.about-us-write-up{
+    flex: 1;
+}
+.about-us-write-up h2{
+    font-size: 50px;
+    color: #705c5c;
+}
+.about-us-write-up p{
+    font-size: 25px;
+}
+
+/* features */
+.feature-title, .feature-writeup{
+    text-align: center;
+}
+.feature-title{
+    font-size: 60px;
+    color: #705c5c;
+}
+.feature-writeup{
+    font-size: 25px;
+}
+
+.feature-container{
+    margin: 0 auto;
+    height: 1000px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.f-child{
+    color: red;
+}
+.f-figcaption, .figgys{
+    color: #5a9170;
+    text-align: left;
 }
