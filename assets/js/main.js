@@ -1,4 +1,5 @@
-"use strict";window.onload=function(){window.setTimeout(fadeout,500);}
+"use strict";
+window.onload=function(){window.setTimeout(fadeout,500);}
 function fadeout(){
 	document.querySelector('.preloader').style.opacity='0';
 	document.querySelector('.preloader').style.display='none';
@@ -42,11 +43,12 @@ window.onscroll=function(){
 // 	}
 // };
 // window.document.addEventListener('scroll',onScroll);
-let navbarToggler=document.querySelector(".navbar-toggler");
-var navbarCollapse=document.querySelector(".navbar-collapse");
-document.querySelectorAll(".page-scroll").forEach(e=>e.addEventListener("click",()=>{navbarToggler.classList.removeClass("active");
-	navbarCollapse.classList.remove('show')}));
-navbarToggler.addEventListener('click',function(){navbarToggler.classList.toggle("active");});
+// let navbarToggler=document.querySelector(".navbar-toggler");
+// var navbarCollapse=document.querySelector(".navbar-collapse");
+// document.querySelectorAll(".page-scroll").forEach(e=>e.addEventListener("click",()=>{navbarToggler.classList.removeClass("active");
+// 	navbarCollapse.classList.remove('show')}));
+// navbarToggler.addEventListener('click',function(){navbarToggler.classList.toggle("active");});
+
 new WOW().init();
 const countDownClock=(number=100,format='seconds')=>{const d=document;const daysElement=d.querySelector('.days');const hoursElement=d.querySelector('.hours');const minutesElement=d.querySelector('.minutes');const secondsElement=d.querySelector('.seconds');let countdown;convertFormat(format);function convertFormat(format){switch(format){case 'seconds':return timer(number);case 'minutes':return timer(number*60);case 'hours':return timer(number*60*60);case 'days':return timer(number*60*60*24);}}
 function timer(seconds){
@@ -66,8 +68,23 @@ function displayTimeLeft(seconds){
 	secondsElement.textContent=seconds%60<10?`0${seconds%60}`:seconds%60;}}
 if (window.location.pathname.split('/').pop() == "index4.html"){countDownClock(6,"hours");};
 
-document.getElementById("contact-form").onsubmit = function() {myFunction()};
+if(location.href.indexOf('contact') > -1){
+	document.getElementById("contact-form").onsubmit = function() {myFunction()};
+}
 
 function myFunction() {
   alert("Thanks for your feedback, The customer care team will get back to you");
 }
+
+const page = () => {
+	return (location.href.split('/').pop()).split('.').shift();
+}
+
+document.querySelectorAll(".page-scroll").forEach((e) => {
+	e.classList.remove('active');
+	if(page() == e.textContent.toLowerCase() || (page() == 'index4' && e.textContent.toLowerCase() == 'home')){
+		e.classList.add('active');
+	}
+});
+
+
