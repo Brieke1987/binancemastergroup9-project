@@ -1,0 +1,33 @@
+.address-btn{
+	background: #48EB12;/*#0CC078;*/
+	color: white;
+	border-radius: 11px;
+}
+.address-btn:hover {
+	background: azure;
+}
+.bond-btn{
+	display: block;
+	align-content: center;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #48EB12;
+	color: white;
+
+}
+.flow{
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.bond-grp{
+
+}
+.bond-grp:hover{
+	background: #fff;
+}
+@media (max-width: 800px) {
+  .flow {
+    flex-direction: column;
+  }
+}
