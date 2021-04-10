@@ -86,5 +86,19 @@ document.querySelectorAll(".page-scroll").forEach((e) => {
 		e.classList.add('active');
 	}
 });
+function addWalletFunc(){
+	//This function should load up different wallets for the user to choose from
+	//And return true if wallet was successfully added
+	return true;
+}
 
+function bondSignInOrOut(argument) {
+	//This function is used to add users address 
+	//And display bond options if signed in else 
+	//The user only sees the Add wallet button
+	if (addWalletFunc() == true){
+		document.getElementById("addWallet").style.display = "none";
+		document.getElementById("flow").style.display = "flex";
+	}
 
+}
