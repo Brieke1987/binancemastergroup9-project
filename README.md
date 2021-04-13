@@ -12,6 +12,8 @@ African countries in general are at a disadvantage as many things are pegged to 
 
 The aim of the Africa Dollar is to create a currency that can equal the playing field for African countries through the use of a algorithmic stable coin that eliminates the volatility inherently found in cryptocurrencies.
 
+In Nigeria in particular, the central bank banned trading with the local currencyas this depreciates the local currency against the USD. Have a stable coin in Africa will ensure safe trading.
+
 This is done through controlling the circulating supply by use of a algorithm that manipulates the Supply and Demand equation from traditional economics. In traditional economics the price is determined by supply and demand, meaning if demand is higher than supply price will increase and when the supply is higher than demand the price will decrease. The algorithm contained in Africa Dollar will keep the price stable by increasing the suplly when demand is high and decreasing the supply when deamand is low which will lead to a stable price. 
 
 **White Paper**
